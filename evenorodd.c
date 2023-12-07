@@ -1,12 +1,18 @@
-//Write a program to check given character is even or odd by using Ternary/Conditional operators.
+#include <stdio.h>
 
+int main() {
+    int number;
 
-#include<stdio.h>
-int main()
-{
-    char a;
-    printf("Enter a character:");
-    scanf("%c",&a);
-    (a%2==0) ? printf("It is even") : printf("It is odd");
-    return 0; 
+    // Input from user
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Check if the number is even or odd
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+
+    return 0;
 }
